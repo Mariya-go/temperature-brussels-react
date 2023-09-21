@@ -15,27 +15,29 @@ const Hour = ({ hourData }) => {
   return (
     <div className="hour">
       <div className="hour-data">{hourData.hour}</div>
-      <div>
-        {hourData.upOrDown === "up" ? (
-          <ImArrowUp2 color="green" />
-        ) : hourData.upOrDown === "down" ? (
-          <ImArrowDown2 color="red" />
-        ) : hourData.upOrDown === "same" ? (
-          <FaEquals />
-        ) : null}
+      <div className="temp">
+        <div>
+          {hourData.upOrDown === "up" ? (
+            <ImArrowUp2 color="green" />
+          ) : hourData.upOrDown === "down" ? (
+            <ImArrowDown2 color="red" />
+          ) : hourData.upOrDown === "same" ? (
+            <FaEquals />
+          ) : null}
+        </div>
+        <div>
+          {Number(hourData.temp) < 10 ? (
+            <ImSad color="red" />
+          ) : Number(hourData.temp) < 15 ? (
+            <ImNeutral />
+          ) : Number(hourData.temp) < 20 ? (
+            <ImSmile color="orange" />
+          ) : (
+            <ImHappy color="blueviolet" />
+          )}
+        </div>
+        <div>{hourData.temp}</div>
       </div>
-      <div>
-        {Number(hourData.temp) < 10 ? (
-          <ImSad />
-        ) : Number(hourData.temp) < 15 ? (
-          <ImNeutral />
-        ) : Number(hourData.temp) < 20 ? (
-          <ImSmile />
-        ) : (
-          <ImHappy />
-        )}
-      </div>
-      <div>{hourData.temp}</div>
     </div>
   );
 };

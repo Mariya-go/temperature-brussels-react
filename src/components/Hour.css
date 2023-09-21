@@ -12,6 +12,17 @@
 
 .hour-data {
   display: flex;
-  flex-basis: 75%;
+  flex-basis: 70%;
   align-items: self-start;
+}
+
+.temp {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.temp div {
+  width: 30.33%;
+  text-align: right;
 }
