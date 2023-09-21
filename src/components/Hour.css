@@ -1,0 +1,17 @@
+.hour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0;
+  padding: 3px 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: aliceblue;
+  color: #42146c;
+}
+
+.hour-data {
+  display: flex;
+  flex-basis: 75%;
+  align-items: self-start;
+}

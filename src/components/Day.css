@@ -1,0 +1,19 @@
+.day-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0;
+  padding: 3px 4px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #42146c;
+  color: aliceblue;
+}
+
+.main-container {
+  max-width: 50%;
+  margin: auto;
+}
+
+.day {
+}
